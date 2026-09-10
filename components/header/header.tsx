@@ -5,7 +5,7 @@ import { useIsMobile } from "@/hooks/isMobile";
 import { FaBurger } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
-const sections = ["skills", "projects", "connect", "about"];
+const sections = ["skills", "projects", "connect","about","credentials","content"];
 
 export default function Header() {
     const isMobile = useIsMobile();
