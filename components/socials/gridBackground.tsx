@@ -56,13 +56,13 @@ export default function GridBackground({ children }: GridBackgroundProps) {
                 ))}
             </div>
 
-            {/* ကိုယ်ပိုင် Content (သို့) Cards များ */}
-            <div className="absolute inset-0 z-20 pointer-events-none">
+
+            <div className="lg:absolute inset-0 z-20 pointer-events-none">
                 <div className="pointer-events-auto w-full h-full lg:w-10/12 mx-auto p-8">
                     {children}
                 </div>
             </div>
-
+    
         </div>
     );
 }

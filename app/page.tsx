@@ -6,6 +6,10 @@ import Spreater from "@/components/Line";
 import Tools from "@/components/tools/Tools";
 import Shipped from "@/components/shipped/shipped";
 import Social from "@/components/socials/social";
+import About from "@/components/about/About";
+import Credentials from "@/components/Credintials/Credentials";
+import Content from "@/components/content/content";
+import Footer from "@/components/footer/footer";
 
 export default async function Page(){
     const profile= await getProfile()
@@ -25,6 +29,14 @@ export default async function Page(){
             <Shipped/>
             <Spreater/>
             <Social/>
+          <div className={" w-full border border-white/10 py-4 bg-black/50"}>
+              <About/>
+          </div>
+            <div className={"w-full border border-white/10 py-4 bg-primary"}>
+                <Credentials/>
+            </div>
+        <Content/>
+            <Footer/>
         </main>
     )
 }
