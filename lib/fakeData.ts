@@ -16,7 +16,7 @@ export const profile={
     toolkitData :[
         {
             category: "Frontend",
-            items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3","others..."],
+            items: ["React", "TypeScript","Next.js", "Tailwind CSS", "HTML5", "CSS3","others..."],
         },
         {
             category: "Backend",
