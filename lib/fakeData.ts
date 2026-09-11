@@ -138,7 +138,7 @@ export const projects = [
 export const socials=["facebook","instagram","twitter","linkedin","github"];
 
 export const aboutParagraphs=[
-    "I am Aung Heein Zay, a junior full-stack developer based in Yangon. I build fast, clean web apps with React, Node and TypeScript, and I learn the craft openly — shipping small projects,sharing progress and writing about what works.",
+    "I am Aung Heein Zay, a junior full-stack developer based in Rakhine. I build fast, clean web apps with React, Node and TypeScript, and I learn the craft openly — shipping small projects,sharing progress and writing about what works.",
     "My focus is the fundamentals done well: semantic markup, sensible state, accessible UI and a build that stays lean. I care about readability and shipping something real over chasing every new tool.",
     "Right now I am open to internships, junior roles and freelance work where I can keep growing and contribute useful code from day one."
 ]
