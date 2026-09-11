@@ -1,23 +1,7 @@
 import TitleHeading from "@/components/heading/heading";
+import {profile} from "@/lib/fakeData";
 
-const toolkitData = [
-    {
-        category: "Frontend",
-        items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
-    },
-    {
-        category: "Backend",
-        items: ["Node.js", "Express", "REST APIs", "GraphQL"],
-    },
-    {
-        category: "Data",
-        items: ["MongoDB", "SQL", "Prisma"],
-    },
-    {
-        category: "Workflow",
-        items: ["Git", "Debugging", "Performance", "Testing"],
-    },
-];
+
 
 export default function Tools(){
     return (
@@ -27,7 +11,7 @@ export default function Tools(){
 
             <div className={"mt-8 relative z-10 bg-primary stripe-bg border border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 lg:divide-x divide-white/10"}>
                 {
-                    toolkitData.map((tool)=>(
+                    profile.toolkitData.map((tool)=>(
                         <div key={tool.category} className="p-6 flex flex-col gap-3 stripe-bg">
                             <h3 className="text-orange-500 font-mono text-sm font-bold uppercase tracking-wider">
                                 {tool.category}

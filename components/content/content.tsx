@@ -5,7 +5,7 @@ import {FaTelegram} from "react-icons/fa";
 
 export default function Content(){
     return (
-        <section id={"content"} className={"w-full bg-grid-pattern py-6"}>
+        <section id={"content"} className={"w-full bg-grid-pattern py-6 px-2"}>
             <div className={"w-full lg:w-4/12 mx-auto flex flex-col gap-4" }>
                 <TitleHeading section={"07 - CONTENT"} heading={"Got a project?. Let us build it."}/>
                 <p className={"opacity-70"}>Open to internships, junior roles and freelance work. Drop a message and I will reply within a day.</p>

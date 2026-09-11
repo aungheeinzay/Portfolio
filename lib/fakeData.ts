@@ -1,9 +1,36 @@
 export const profile={
     name:"Aung Heein Zay",
     headline:"",
+    role:["FULL-STACK DEVELOPER","FRONT-END DEVELOPER","BACKEND DEVELOPER"],
     description:"  Zero years on paper, one hundred percent on fire. I learn full-stack development in public and turn fresh ideas into shipped, fast, well-built products.",
-    location:"rakhine",
+    location:"MYANMAR",
     avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gxmuRJMonTfk1TleVhCbVsB-DZLFytWLdr3vCrK87oi-JGnHk3uQzcxy&s=10",
+    socials:{
+        facebook:"https://www.facebook.com/aungheeinzay",
+        gmail:"ahz007aunghz@gmail.com",
+        linkedin:"https://www.linkedin.com/in/aungheeinzay/",
+        telegram:"https://t.me/AungHeein",
+        vercel:"https://t.me/AungHeein",
+        github:"https://github.com/aungheeinzay",
+    },
+    toolkitData :[
+        {
+            category: "Frontend",
+            items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
+        },
+        {
+            category: "Backend",
+            items: ["Node.js", "Express", "REST APIs", "GraphQL"],
+        },
+        {
+            category: "Data",
+            items: ["MongoDB", "SQL", "Prisma"],
+        },
+        {
+            category: "Workflow",
+            items: ["Git", "Debugging", "Performance", "Testing"],
+        },
+    ]
 }
 export const projects = [
     {
@@ -62,7 +89,7 @@ export const MyStatus={
     location:"Rakhine, Myanmar",
     openTo:"Internships, junior roles, freelence",
     mode:"Remote",
-    education:"B.Sc. Computer Science — UCSS (attented 4th year)"
+    education:"B.Sc. Computer Science — UCSS (attented through 4th year)"
 }
 
 export const goalsList=[
@@ -85,13 +112,13 @@ export const goalsList=[
 
 export const certificateList=[
     {
-        title:"Next Js",
+        title:"Next.js",
         url:"https://i.postimg.cc/bJQSHMgj/Screenshot-2026-09-10-113405.png",
         source:"CODE HUB MM",
         sourceLink:"https://www.codehubmm.com/"
     },
     {
-        title:"GraphQl",
+        title:"GraphQL",
         url:"https://i.postimg.cc/y8tJqBpG/Screenshot-2026-09-10-113636.png",
         source:"CODE HUB MM",
         sourceLink:"https://www.codehubmm.com/"

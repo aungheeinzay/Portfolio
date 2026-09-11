@@ -5,7 +5,7 @@ import GoalCardList from "@/components/about/GoalCardList";
 
 export default function About(){
     return (
-     <section id={"about"} className={"w-full lg:w-8/12 mx-auto mt-4 "}>
+     <section id={"about"} className={"w-full lg:w-8/12 mx-auto mt-4 px-2"}>
          <TitleHeading section={"05 - About"} heading={"Junior Developer ,Learning In Public"}/>
         <main className={"w-full grid gri-cols-1 lg:grid-cols-4 gap-8  py-4"}>
             <div className={"font-lg lg:col-span-3 grid place-items-cneter gap-4"}>

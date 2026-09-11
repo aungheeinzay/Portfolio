@@ -3,14 +3,16 @@ import React from "react";
 interface TechButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     onClick?: () => void;
     text?: string;
+    children?: React.ReactNode;
+
 }
 
-export function TechButton({ text = "Get Touch", onClick, ...props }: TechButtonProps) {
+export function TechButton({ text = "Get Touch",children, onClick,className, ...props }: TechButtonProps) {
     return (
         <button
             onClick={onClick}
             {...props}
-            className="relative stripe-bg group px-8 py-3 cursor-pointer border border-white/25 border-dashed "
+            className={"relative stripe-bg group px-8 py-3 cursor-pointer border border-white/25 border-dashed "+className}
         >
             {/* ၄၅ ဒီဂရီ ထောင့်ဖြတ်ဖြင့် ဝင်လာမည့် Background Effect */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -25,7 +27,7 @@ export function TechButton({ text = "Get Touch", onClick, ...props }: TechButton
 
             {/* စာသား */}
             <span className="relative z-10 font-bold text-sm text-white group-hover:text-black transition-colors duration-300">
-                {text}
+                {children || text}
             </span>
         </button>
     );

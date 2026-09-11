@@ -3,7 +3,7 @@ import CertificateCardList from "@/components/Credintials/CertificateCardList";
 
 export default function Credentials(){
     return (
-        <section id={"credentials"} className={"bg-primary w-full lg:w-8/12 mx-auto flex flex-col gap-4"}>
+        <section id={"credentials"} className={"bg-primary w-full lg:w-8/12 mx-auto flex flex-col gap-4 px-2"}>
             <TitleHeading section={"06 - CREDENTIALS"} heading={"Certificates && credentials."}/>
 
         <CertificateCardList/>

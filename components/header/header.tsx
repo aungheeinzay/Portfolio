@@ -4,19 +4,25 @@ import { useState } from "react";
 import { useIsMobile } from "@/hooks/isMobile";
 import { FaBurger } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
+import {useRouter} from "next/navigation";
+
+
 
 const sections = ["skills", "projects", "connect","about","credentials","content"];
 
 export default function Header() {
+    const router = useRouter()
     const isMobile = useIsMobile();
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <header className="mx-auto w-full border-b border-b-orange-200 bg-white/5 px-6 py-4 backdrop-blur-xl shadow-lg shadow-black/10 fixed top-0 z-50">
             <div className="w-full lg:w-8/12 mx-auto flex justify-between items-center">
-                <a href="#" className="font-heading font-bold text-xl tracking-wider text-white">
+                <button
+                    onClick={()=>router.push("/")}
+                    className="font-heading font-bold text-xl tracking-wider text-white">
                     AHZ<span className="text-orange-500">.</span>
-                </a>
+                </button>
 
                 {isMobile ? (
                     <div>
@@ -110,12 +116,13 @@ export default function Header() {
                     <ul className="flex justify-center items-center gap-6">
                         {sections.map((label) => (
                             <li key={label}>
-                                <Link
-                                    href={`#${label}`}
+                                <button onClick={()=>{
+                                    router.replace(`/#${label}`)
+                                }}
                                     className="hover:text-orange-500 capitalize text-sm text-gray-300 transition-colors"
                                 >
                                     {label}
-                                </Link>
+                                </button>
                             </li>
                         ))}
                         <Link
