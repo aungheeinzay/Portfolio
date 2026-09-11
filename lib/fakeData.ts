@@ -171,13 +171,13 @@ export const goalsList=[
 export const certificateList=[
     {
         title:"Next.js",
-        url:"https://i.postimg.cc/bJQSHMgj/Screenshot-2026-09-10-113405.png",
+        url:"https://iili.io/nfMsQLJ.png",
         source:"CODE HUB MM",
         sourceLink:"https://www.codehubmm.com/"
     },
     {
         title:"GraphQL",
-        url:"https://i.postimg.cc/y8tJqBpG/Screenshot-2026-09-10-113636.png",
+        url:"https://iili.io/nfMsLXa.png",
         source:"CODE HUB MM",
         sourceLink:"https://www.codehubmm.com/"
     }
