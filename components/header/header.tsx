@@ -126,6 +126,12 @@ export default function Header() {
                             </li>
                         ))}
                         <Link
+                            href="/blog"
+                            className="capitalize text-sm text-gray-300 transition-colors block py-2"
+                        >
+                            blogs
+                        </Link>
+                        <Link
                             href="/resume"
                             className="capitalize text-sm bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-full transition-colors text-white font-medium"
                         >

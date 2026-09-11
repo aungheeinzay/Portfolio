@@ -2,7 +2,8 @@ import { profile } from "@/lib/fakeData";
 import { FaLocationPin } from "react-icons/fa6";
 import Spreater from "@/components/Line";
 import {MdEmail} from "react-icons/md";
-import {FaGithub, FaLinkedin, FaTelegram} from "react-icons/fa";
+import {FaFacebook, FaGithub, FaLinkedin, FaTelegram} from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 type ResumeProps = {
     role: string;
@@ -61,30 +62,39 @@ export default function ResumeBio({
                 <div className="my-5">
                     <ul className="flex flex-col gap-3 text-sm text-white/60">
 
-                        <li className="flex gap-2">
+                        <li className="flex gap-2 items-center">
                             <FaLocationPin />
                             {profile.location}
                         </li>
 
-                        <li className="flex gap-2">
+                        <li className="flex gap-2 items-center">
                             <MdEmail/>
-                            {profile.socials.gmail}
+                            ahz007aunghz@gmail.com
                         </li>
 
-                        <li className="flex gap-2">
+                        <li className="flex gap-2 items-center">
                             <FaTelegram/>
                             {profile.socials.telegram}
                         </li>
 
-                        <li className="flex gap-2">
+                        <li className="flex gap-2 items-center">
                             <FaLinkedin/>
                             {profile.socials.linkedin}
                         </li>
-
-                        <li className="flex gap-2">
+                        <li className="flex gap-2 items-center">
+                            <FaFacebook/>
+                            {profile.socials.facebook}
+                        </li>
+                        <li className="flex gap-2 items-center">
                             <FaGithub/>
                             {profile.socials.github}
                         </li>
+
+                        <li className="flex gap-2 items-center">
+                            <TbWorld />
+                            {profile.socials.web}
+                        </li>
+
 
                     </ul>
                 </div>

@@ -6,73 +6,131 @@ export const profile={
     location:"MYANMAR",
     avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gxmuRJMonTfk1TleVhCbVsB-DZLFytWLdr3vCrK87oi-JGnHk3uQzcxy&s=10",
     socials:{
-        facebook:"https://www.facebook.com/aungheeinzay",
-        gmail:"ahz007aunghz@gmail.com",
-        linkedin:"https://www.linkedin.com/in/aungheeinzay/",
+        facebook:"https://www.facebook.com/aung.h.zay.9",
+        gmail:"mailto:ahz007aunghz@gmail.com?subject=Portfolio%20Contact&body=Hello%20Ahz,%0A%0AI%20would%20like%20to%20contact%20you.",
+        linkedin:"https://www.linkedin.com/in/aung-heein-zay-ahz-875276365/",
         telegram:"https://t.me/AungHeein",
-        vercel:"https://t.me/AungHeein",
+        web:"https://portfolio-steel-eight-1lp6tkr2rc.vercel.app/",
         github:"https://github.com/aungheeinzay",
     },
     toolkitData :[
         {
             category: "Frontend",
-            items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
+            items: ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3","others..."],
         },
         {
             category: "Backend",
-            items: ["Node.js", "Express", "REST APIs", "GraphQL"],
+            items: ["Node.js", "Express", "REST APIs", "GraphQL","socket.io"],
         },
         {
             category: "Data",
-            items: ["MongoDB", "SQL", "Prisma"],
+            items: ["MongoDB","Mongoose", "SQL", "Prisma","Drizzle"],
         },
         {
             category: "Workflow",
-            items: ["Git", "Debugging", "Performance", "Testing"],
+            items: ["Git","Docker", "Debugging", "Performance", "Testing"],
         },
     ]
 }
 export const projects = [
-    {
-        id: "1",
-        title: "E-Commerce Platform",
-        slug: "e-commerce-platform",
-        description: "A full-featured modern online store with payment integration and admin dashboard.",
-        image: "https://images.unsplash.com/photo-1557821552-17105176670c?auto=format&fit=crop&w=800&q=80",
-        problem: "Local small businesses lacked an affordable, fast, and easy-to-manage digital storefront.",
-        solution: "Built a scalable Next.js e-commerce platform with Stripe integration and Tailwind CSS.",
-        architecture: "Next.js App Router frontend communicating with Node.js backend API and PostgreSQL database.",
-        githubUrl: "https://github.com/username/ecommerce",
-        liveUrl: "https://ecommerce.example.com",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-        featured: true
-    },
-    {
-        id: "2",
-        title: "Task Management App",
-        slug: "task-management-app",
-        description: "Collaborative real-time task manager for remote development teams.",
-        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
-        problem: "Remote teams struggle with tracking real-time updates across multiple disjointed tools.",
-        solution: "Developed a real-time dashboard using WebSockets and React for seamless task tracking.",
-        architecture: "React frontend with WebSockets connecting to a Go backend service and MongoDB storage.",
-        githubUrl: "https://github.com/username/task-app",
-        liveUrl: "https://task-app.example.com",
-        technologies: ["React", "Go", "MongoDB", "WebSockets"],
-        featured: false
-    },
+{
+    id: "1",
+    title: "DevForum — Developer Social Platform",
+    slug: "devforum-developer-social-platform",
+
+    description:
+     "A modern full-stack developer community platform focused on content sharing, social interactions, and scalable event-driven features, built with Next.js 16, TypeScript, Prisma, PostgreSQL, and Better Auth.",
+    image: "https://iili.io/nfENMzX.png",
+
+    problem:
+       "Needed a scalable platform for developer content, social interactions, and real-time-like event handling without tightly coupling UI components.",
+    solution:
+       "Built with Next.js 16, Better Auth, Tiptap, Prisma/PostgreSQL, reactions, comments, hashtags, and an Observer Pattern for notifications.",
+    architecture:
+        ": App Router + Server Actions + React Server Components with feature-based modules, type-safe validation, relational data modeling, and event-driven UI updates.",
+    githubUrl:
+        "https://github.com/aungheeinzay/Next-js-16.git",
+
+    liveUrl:
+        "https://next-js-16-ry6j.vercel.app/",
+
+    technologies: [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn",
+        "Prisma",
+        "PostgreSQL",
+        "Better Auth",
+        "Server Actions",
+        "next-safe-action",
+        "Zod",
+        "Tiptap",
+        "UploadThing",
+        "Resend",
+        "React Hook Form",
+        "Observer Pattern"
+    ],
+
+    featured: true
+},
+
+{
+    id: "2",
+    title: "SnapShop — Phone E-Commerce Platform",
+    slug: "snapshop-phone-ecommerce-platform",
+    description:
+        "A full-stack e-commerce platform with authentication, product variants, image management, orders, Stripe payments, and an admin dashboard.",
+    image: "https://iili.io/nfGKBt4.png",
+    problem:
+        "Building a complete shopping workflow with secure authentication, flexible product variants, order management, and online payments.",
+    solution:
+        "Built a scalable Next.js architecture using Drizzle, PostgreSQL, NextAuth, Stripe, UploadThing, and server-side actions for secure business logic.",
+    architecture:
+        "Next.js App Router with Server Actions, Drizzle ORM, Neon PostgreSQL, NextAuth, Zustand, Stripe, UploadThing, and Resend.",
+    githubUrl:
+        "https://github.com/aungheeinzay/PhoneSaleSnapShop.git",
+    liveUrl:
+        "https://snapshop-six.vercel.app/",
+    technologies: [
+        "Next.js",
+        "TypeScript",
+        "Shadcn",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "NextAuth",
+        "Stripe",
+        "Zustand",
+        "UploadThing"
+    ],
+    featured: true
+},
+
     {
         id: "3",
-        title: "AI Content Generator",
-        slug: "ai-content-generator",
-        description: "SaaS platform that generates marketing copy and blog posts using LLMs.",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-        problem: "Content creators spend too much time brainstorming and drafting repetitive marketing texts.",
-        solution: "Integrated OpenAI API into a fast web application to automate article and ad copy generation.",
-        architecture: "Vue.js frontend interacting with Python FastAPI backend and Redis caching layer.",
-        githubUrl: "https://github.com/username/ai-generator",
-        liveUrl: "https://ai-generator.example.com",
-        technologies: ["Vue.js", "Python", "FastAPI", "OpenAI API"],
+        title: "Hotel Booking & Management System",
+        slug: "hotel-booking-management-system",
+        description: "A production-grade, full-stack enterprise solution built for complex hotel hospitality operations, real-time availability, and automated workflow management.",
+        image: "https://iili.io/nf151Fj.png",
+        problem: "Handling complex date-range overlaps across timezones, dynamic pricing, and real-time state synchronization across admin dashboards without performance lagging.",
+        solution: "Engineered a decoupled GraphQL architecture with strict UTC standardization, MongoDB aggregation pipelines, and WebSocket subscription networks for sub-second updates.",
+        architecture: "React & Apollo Client frontend interacting with a Node.js/Express v5 GraphQL API, secured with custom RBAC HOCs, and backed by MongoDB (Mongoose v9) with Stripe/Cloudinary integrations.",
+        githubUrl: "https://github.com/aungheeinzay/Hotel-Management-System.git",
+        liveUrl: "https://hotel-booking.example.com",
+        technologies: [
+            "React",
+            "Shadcn",
+            "TypeScript",
+            "GraphQL",
+            "Apollo Client",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS",
+            "WebSockets",
+            "Stripe"
+        ],
         featured: true
     }
 ];
@@ -99,7 +157,7 @@ export const goalsList=[
         goal:"Master the fundamentals: HTML, CSS, JavaScript and Git."
     },
     {
-        year:"2025",
+        year:"2024",
         content:"Built first React + Node projects and a REST API",
         goal:"Ship 5 small apps and learn TypeScript end-to-end.",
     },

@@ -2,11 +2,12 @@ import MatchIcon from "@/components/socials/IconMatcher";
 
 interface SocialCardProps {
     text: string;
+    value:string
 }
 
-export default function SocialCard({ text }: SocialCardProps) {
+export default function SocialCard({ text,value }: SocialCardProps) {
     return (
-        <div
+        <a href={value}
             className="cursor-pointer lg:col-span-1 border border-white/10 p-4 flex flex-col items-center justify-between h-[150px] transition-all duration-300 group relative overflow-hidden hover:bg-[#121212]/90"
         >
             <span className="absolute top-0 left-0 h-[1px] w-full bg-orange-500 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
@@ -17,10 +18,11 @@ export default function SocialCard({ text }: SocialCardProps) {
             </span>
 
             <div className="flex items-center font-heading gap-2 text-gray-400  transition-colors mt-auto">
-                <span className="text-xs flex gap-2 items-center  tracking-wider">
+                <span
+                    className="text-xs flex gap-2 items-center  tracking-wider">
                     <MatchIcon text={text}/>
                     {text}</span>
             </div>
-        </div>
+        </a>
     );
 }

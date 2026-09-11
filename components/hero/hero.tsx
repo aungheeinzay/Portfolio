@@ -1,15 +1,10 @@
 import Link from "next/link";
 import { TechButton } from "@/components/TeachButton";
 import RandomGlow from "@/components/hero/randomGlow";
+import {MyStatus, profile} from "@/lib/fakeData";
 
-interface HeroProps {
-    name: string;
-    location: string;
-    description: string;
-    avatar: string;
-}
 
-export default function Hero({ name, description, location, avatar }: HeroProps) {
+export default function Hero() {
     return (
         <section className="w-full pt-32 pb-16 px-6 bg-grid-pattern lg:h-[80vh] grid place-items-center relative overflow-hidden">
 
@@ -20,18 +15,18 @@ export default function Hero({ name, description, location, avatar }: HeroProps)
 
                 <div className="lg:col-span-7 flex flex-col gap-6">
                     <span className="text-xs uppercase tracking-widest text-gray-400 font-heading">
-                        FULL-STACK DEVELOPER · {location}
+                        FULL-STACK DEVELOPER · {MyStatus.location}
                     </span>
 
                     <h1 className="text-4xl lg:text-6xl font-extrabold text-white font-heading tracking-tight">
-                        {name}<span className="text-orange-500">.</span>
+                        {profile.name}<span className="text-orange-500">.</span>
                     </h1>
 
                     <p className="text-gray-300 text-base lg:text-lg leading-relaxed font-sans opacity-70">
-                        {description}
+                        {profile.description}
                     </p>
 
-                    {/* ခလုတ်များ (Buttons) */}
+
                     <div className="flex flex-wrap gap-4 pt-2">
                         <Link
                             href="#projects"
@@ -68,7 +63,7 @@ export default function Hero({ name, description, location, avatar }: HeroProps)
                                 clipPath: "polygon(30% 0%, 120% 0%, 120% 70%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)"
                             }}
                         >
-                            <img src={avatar} alt={"avatar"} className="w-full h-full object-cover" />
+                            <img src={profile.avatar} alt={"avatar"} className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>

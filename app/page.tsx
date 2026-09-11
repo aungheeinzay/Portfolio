@@ -12,7 +12,7 @@ import Content from "@/components/content/content";
 import Footer from "@/components/footer/footer";
 
 export default async function Page(){
-    const profile= await getProfile()
+
     return(
         <main className={"w-full relative"}>
 
@@ -21,7 +21,7 @@ export default async function Page(){
               <div className={"w-8/12 h-full border-[0.8px] border-white/10 left-1/2 -translate-x-1/2 -z-10 absolute"}></div>
 
 
-              <Hero {...profile}/>
+              <Hero/>
               <Spreater/>
               <Tools/>
               <Spreater/>

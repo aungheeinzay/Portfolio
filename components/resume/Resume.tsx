@@ -9,7 +9,6 @@ import html2canvas from "html2canvas-pro";
 import { jsPDF } from "jspdf";
 import {TechButton} from "@/components/TeachButton";
 import {FaDownload} from "react-icons/fa";
-import changePath from "@/lib/path";
 
 export default function Resume() {
     const resumeRef = useRef<HTMLDivElement>(null);
@@ -61,7 +60,7 @@ export default function Resume() {
             console.error("PDF production error", error);
         }
     };
-changePath("session")
+
     return (
         <main className="pt-24 px-4 lg:w-8/10 mx-auto">
 
