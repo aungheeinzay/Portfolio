@@ -24,7 +24,7 @@ export const profile={
         },
         {
             category: "Data",
-            items: ["MongoDB","Mongoose", "SQL", "Prisma","Drizzle"],
+            items: ["MongoDB","Mongoose", "SQL", "Prisma","Drizzle","Redis"],
         },
         {
             category: "Workflow",
@@ -66,6 +66,7 @@ export const projects = [
         "Server Actions",
         "next-safe-action",
         "Zod",
+        "shadcn",
         "Tiptap",
         "UploadThing",
         "Resend",

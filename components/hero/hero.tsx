@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { TechButton } from "@/components/TeachButton";
 import RandomGlow from "@/components/hero/randomGlow";
@@ -5,6 +6,15 @@ import {MyStatus, profile} from "@/lib/fakeData";
 
 
 export default function Hero() {
+    const handleOpenGmail = () => {
+  const email = "ahz007aunghz@gmail.com";
+  const subject = encodeURIComponent("Inquiry from Portfolio");
+  const body = encodeURIComponent("Hi, I would like to get in touch with you regarding...");
+
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+  
+  window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+};
     return (
         <section className="w-full pt-32 pb-16 px-6 bg-grid-pattern lg:h-[80vh] grid place-items-center relative overflow-hidden">
 
@@ -34,7 +44,7 @@ export default function Hero() {
                         >
                             View projects
                         </Link>
-                        <TechButton />
+                        <TechButton onClick={handleOpenGmail}/>
                     </div>
 
                     <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 mt-4">
