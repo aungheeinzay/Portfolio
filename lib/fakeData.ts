@@ -4,7 +4,7 @@ export const profile={
     role:["FULL-STACK DEVELOPER","FRONT-END DEVELOPER","BACKEND DEVELOPER"],
     description:"  Zero years on paper, one hundred percent on fire. I learn full-stack development in public and turn fresh ideas into shipped, fast, well-built products.",
     location:"MYANMAR",
-    avatar:"https://freeimage.host/i/nW6yqYv",
+    avatar:"https://www.facebook.com/photo.php?fbid=980855176316999&set=pb.100031775784215.-2207520000&type=3",
     socials:{
         facebook:"https://www.facebook.com/aung.h.zay.9",
         gmail:"mailto:ahz007aunghz@gmail.com?subject=Portfolio%20Contact&body=Hello%20Ahz,%0A%0AI%20would%20like%20to%20contact%20you.",
