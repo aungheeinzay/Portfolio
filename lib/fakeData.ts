@@ -10,7 +10,7 @@ export const profile={
         gmail:"mailto:ahz007aunghz@gmail.com?subject=Portfolio%20Contact&body=Hello%20Ahz,%0A%0AI%20would%20like%20to%20contact%20you.",
         linkedin:"https://www.linkedin.com/in/aung-heein-zay-ahz-875276365/",
         telegram:"https://t.me/AungHeein",
-        web:"https://portfolio-steel-eight-1lp6tkr2rc.vercel.app/",
+        web:"https://portfolio-aung-heeins-projects.vercel.app",
         github:"https://github.com/aungheeinzay",
     },
     toolkitData :[
