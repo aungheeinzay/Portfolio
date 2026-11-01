@@ -16,11 +16,11 @@ export const profile={
     toolkitData :[
         {
             category: "Frontend",
-            items: ["React", "TypeScript","Next.js", "Tailwind CSS", "HTML5", "CSS3","others..."],
+            items: ["React", "TypeScript","Next.js","React Native","Expo", "Tailwind CSS", "HTML5", "CSS3"],
         },
         {
             category: "Backend",
-            items: ["Node.js", "Express", "REST APIs", "GraphQL","socket.io"],
+            items: ["Node.js", "Express", "Nest js", "REST APIs", "GraphQL","socket.io"],
         },
         {
             category: "Data",
@@ -141,12 +141,12 @@ export const socials=["facebook","instagram","twitter","linkedin","github"];
 export const aboutParagraphs=[
     "I am Aung Heein Zay, a junior full-stack developer based in Rakhine. I build fast, clean web apps with React, Node and TypeScript, and I learn the craft openly — shipping small projects,sharing progress and writing about what works.",
     "My focus is the fundamentals done well: semantic markup, sensible state, accessible UI and a build that stays lean. I care about readability and shipping something real over chasing every new tool.",
-    "Right now I am open to internships, junior roles and freelance work where I can keep growing and contribute useful code from day one."
+    "Right now I am open to junior roles and freelance work where I can keep growing and contribute useful code from day one."
 ]
 
 export const MyStatus={
     location:"Rakhine, Myanmar",
-    openTo:"Internships, junior roles, freelence",
+    openTo:"junior roles, freelence",
     mode:"Remote",
     education:"B.Sc. Computer Science — UCSS (attented through 4th year)"
 }
